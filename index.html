@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thoreq</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" id="angka1">
+        <input type="number" id="angka2" >
+        <input type="number" id="hasil" disabled>
+        <button type="button" onclick="tambah()">+</button>
+        <button type="button" onclick="kali()">x</button>
+        <button type="button" onclick="bagi()">/</button>   
+        <button type="button" onclick="kurang()">-</button>
+    </form>
+
+    <script>
+        function tambah() {
+            let angka1 = Number(document.getElementById("angka1").value);
+            let angka2 = Number(document.getElementById("angka2").value);
+            let hasilTambah = angka1+angka2 ; 
+            document.getElementById("hasil").value = hasilTambah;
+        }
+
+        function kali() {
+            let angka1 = Number(document.getElementById("angka1").value);
+            let angka2 = Number(document.getElementById("angka2").value);
+            let hasilTambah = angka1*angka2 ; 
+            document.getElementById("hasil").value = hasilTambah;
+        }
+
+        function bagi() {
+            let angka1 = Number(document.getElementById("angka1").value);
+            let angka2 = Number(document.getElementById("angka2").value);
+            let hasilTambah = angka1/angka2 ; 
+            document.getElementById("hasil").value = hasilTambah;
+        }
+
+        function kurang() {
+            let angka1 = Number(document.getElementById("angka1").value);
+            let angka2 = Number(document.getElementById("angka2").value);
+            let hasilTambah = angka1-angka2 ; 
+            document.getElementById("hasil").value = hasilTambah;
+        }
+
+    </script>
+</body>
+</html>
